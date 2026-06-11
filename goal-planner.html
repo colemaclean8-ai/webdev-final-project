@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goal Planner Web App</title>
+<style>
+body{font-family:Arial, Helvetica, sans-serif;background:#f1f5f9;color:#0f172a;margin:0}
+.app{max-width:850px;margin:40px auto;background:white;border-radius:20px;padding:30px;box-shadow:0 10px 30px rgba(15,23,42,.15)}
+h1{color:#0f766e}
+label{font-weight:bold;display:block;margin-top:15px}
+input,select,textarea{width:100%;padding:12px;margin-top:6px;border:1px solid #cbd5e1;border-radius:10px;font-size:16px;box-sizing:border-box}
+button{background:#0f766e;color:white;border:none;border-radius:10px;padding:12px 18px;margin-top:18px;font-size:16px;cursor:pointer}
+button:hover{background:#115e59}
+.result{background:#ecfeff;border-left:8px solid #0f766e;border-radius:10px;padding:18px;margin-top:22px;white-space:pre-line}
+.nav a{color:#0f766e;font-weight:bold}
+.small{color:#475569}
+</style>
+</head>
+<body>
+<div class="app">
+<div class="nav"><a href="../scratch.html">← Back to Scratch Page</a> | <a href="../index.html">Professional Home</a></div>
+<h1>AI-Assisted Goal Planner</h1>
+<p class="small">This single-page web app helps turn a goal into a simple weekly action plan. It uses HTML, CSS, and JavaScript on one page.</p>
+
+<label for="goal">What goal are you working on?</label>
+<input id="goal" placeholder="Example: improve my fitness, study more, build a business">
+
+<label for="days">How many days per week can you work on it?</label>
+<select id="days">
+<option value="3">3 days</option>
+<option value="4">4 days</option>
+<option value="5">5 days</option>
+<option value="6">6 days</option>
+</select>
+
+<label for="time">How many minutes per session?</label>
+<input id="time" type="number" min="10" max="180" placeholder="45">
+
+<label for="obstacle">What usually gets in the way?</label>
+<textarea id="obstacle" rows="3" placeholder="Example: I get tired, I procrastinate, I forget, I overplan"></textarea>
+
+<button onclick="makePlan()">Build My Plan</button>
+<button onclick="resetApp()">Reset</button>
+
+<div id="result" class="result" style="display:none;"></div>
+</div>
+
+<script>
+function makePlan(){
+    const goal = document.getElementById('goal').value.trim() || "my goal";
+    const days = document.getElementById('days').value;
+    const time = document.getElementById('time').value || "30";
+    const obstacle = document.getElementById('obstacle').value.trim() || "getting off track";
+    const weeklyMinutes = Number(days) * Number(time);
+    let plan = `Goal: ${goal}\n\n`;
+    plan += `Weekly commitment: ${days} sessions x ${time} minutes = ${weeklyMinutes} focused minutes per week.\n\n`;
+    plan += `Simple plan:\n`;
+    plan += `1. Start each session with a 5-minute warm-up or review.\n`;
+    plan += `2. Spend most of the session on the highest-value action connected to ${goal}.\n`;
+    plan += `3. End by writing one sentence about what went well and what to do next.\n\n`;
+    plan += `Obstacle strategy: When ${obstacle} happens, shrink the task to just 10 minutes instead of skipping completely.\n\n`;
+    plan += `Progress check: Every Sunday, score the week from 1-10 and choose one adjustment for next week.`;
+    document.getElementById('result').style.display = 'block';
+    document.getElementById('result').textContent = plan;
+}
+function resetApp(){
+    document.getElementById('goal').value='';
+    document.getElementById('days').value='3';
+    document.getElementById('time').value='';
+    document.getElementById('obstacle').value='';
+    document.getElementById('result').style.display='none';
+}
+</script>
+</body>
+</html>
