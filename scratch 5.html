@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>From Scratch Page | Fitness and Productivity</title>
+<style>
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #17324d;
+    background: #eef7f4;
+}
+.header {
+    background: #0f766e;
+    color: white;
+    padding: 35px;
+    text-align: center;
+}
+.nav-box {
+    background: white;
+    margin: 20px auto;
+    padding: 18px;
+    width: 88%;
+    border-radius: 14px;
+    border: 2px solid #9bd7ca;
+    text-align: center;
+}
+.nav-box a {
+    color: #0f5f59;
+    font-weight: bold;
+    margin: 0 12px;
+    text-decoration: none;
+}
+.content-block {
+    background: #ffffff;
+    width: 88%;
+    margin: 24px auto;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(15, 118, 110, .15);
+}
+.side-note {
+    background: #dff7ef;
+    border-left: 8px solid #0f766e;
+    padding: 18px;
+    margin: 20px 0;
+}
+.media-box {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.media-box img {
+    max-width: 420px;
+    width: 100%;
+    border-radius: 18px;
+    border: 4px solid #0f766e;
+}
+.tableau-box {
+    background: #f8fafc;
+    padding: 15px;
+    border-radius: 16px;
+    overflow: auto;
+}
+h1, h2 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+    color: #0f766e;
+}
+.highlight {
+    color: #b45309;
+    font-weight: bold;
+}
+.backtop {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0f766e;
+    font-weight: bold;
+}
+iframe {
+    max-width: 100%;
+    border: 0;
+}
+</style>
+</head>
+<body id="top">
+<div class="header">
+<h1>Fitness, Discipline, and Productive Living</h1>
+<p>A from-scratch page demonstrating HTML, CSS, embedded media, anchors, lists, images, divs, and Tableau.</p>
+</div>
+
+<div class="nav-box">
+<a href="index.html" title="Go back to professional homepage">Professional Home</a>
+<a href="resume.html" title="View HTML resume">Résumé</a>
+<a href="projects.html" title="View projects">Projects</a>
+<a href="goal-planner.html" title="Open the AI-built web app">AI Web App</a>
+<a href="#tableau" title="Jump to Tableau section">Jump to Tableau</a>
+<a href="#video" title="Jump to video section">Jump to Video</a>
+</div>
+
+<div class="content-block">
+<h2>Why I Chose This Topic</h2>
+<div class="media-box">
+<img src="fitness.svg" alt="Fitness progress line chart illustration" width="420" height="273">
+<div>
+<p>Fitness is not just about looking better. It is also about becoming more disciplined, improving energy, and building confidence through repeated daily action.</p>
+<p class="highlight">This page uses a custom background color, custom styles, and multiple styled div blocks.</p>
+</div>
+</div>
+</div>
+
+<div class="content-block">
+<h2>Training Priorities</h2>
+<p>The list below demonstrates an unordered list embedded inside an ordered list.</p>
+<ol>
+<li>Build a weekly routine
+    <ul>
+        <li>Lift weights consistently</li>
+        <li>Schedule cardio sessions</li>
+        <li>Plan recovery days</li>
+    </ul>
+</li>
+<li>Improve nutrition
+    <ul>
+        <li>Eat enough protein</li>
+        <li>Drink enough water</li>
+        <li>Keep meals simple and repeatable</li>
+    </ul>
+</li>
+<li>Track progress
+    <ul>
+        <li>Use workouts, sleep, and energy as data</li>
+        <li>Make small adjustments each week</li>
+    </ul>
+</li>
+</ol>
+<div class="side-note">
+<p><strong>Parent and child elements:</strong> the ordered list contains list items, and each list item contains an unordered list nested inside it.</p>
+</div>
+<a class="backtop" href="#top">Back to top</a>
+</div>
+
+<div class="content-block" id="video">
+<h2>Embedded YouTube Video</h2>
+<p>This embedded video demonstrates use of an iframe.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ttbyn4JOITw" title="HTML tutorial video" allowfullscreen></iframe>
+<br>
+<a class="backtop" href="#top">Back to top</a>
+</div>
+
+<div class="content-block" id="tableau">
+<h2>Interactive Tableau Visualization</h2>
+<p>This section embeds a live Tableau Public visualization rather than using a screenshot.</p>
+<div class="tableau-box">
+<div class='tableauPlaceholder' id='viz1749669000000' style='position: relative'>
+<noscript>
+<a href='https://public.tableau.com/views/RegionalSampleWorkbook/Stocks'>
+<img alt='Stocks Tableau Visualization' src='https://public.tableau.com/static/images/Re/RegionalSampleWorkbook/Stocks/1_rss.png' style='border: none' />
+</a>
+</noscript>
+<object class='tableauViz' style='display:none;'>
+<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+<param name='embed_code_version' value='3' />
+<param name='site_root' value='' />
+<param name='name' value='RegionalSampleWorkbook/Stocks' />
+<param name='tabs' value='no' />
+<param name='toolbar' value='yes' />
+<param name='static_image' value='https://public.tableau.com/static/images/Re/RegionalSampleWorkbook/Stocks/1.png' />
+<param name='animate_transition' value='yes' />
+<param name='display_static_image' value='yes' />
+<param name='display_spinner' value='yes' />
+<param name='display_overlay' value='yes' />
+<param name='display_count' value='yes' />
+<param name='language' value='en-US' />
+</object>
+</div>
+<script type='text/javascript'>
+var divElement = document.getElementById('viz1749669000000');
+var vizElement = divElement.getElementsByTagName('object')[0];
+vizElement.style.width='100%';
+vizElement.style.height='750px';
+var scriptElement = document.createElement('script');
+scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+</div>
+<p><a href="https://public.tableau.com/views/RegionalSampleWorkbook/Stocks" target="_blank" title="Open Tableau visualization in new tab">Open Tableau visualization in a new tab</a></p>
+<a class="backtop" href="#top">Back to top</a>
+</div>
+
+<div class="content-block">
+<h2>Navigation</h2>
+<p>This page links back to the professional-looking pages and to the JavaScript web app.</p>
+<p><a href="index.html" title="Professional homepage">Return to professional website</a></p>
+<p><a href="goal-planner.html" title="Goal planner web app">Open the AI-built goal planner app</a></p>
+</div>
+</body>
+</html>
