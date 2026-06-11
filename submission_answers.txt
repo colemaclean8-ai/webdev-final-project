@@ -1,0 +1,61 @@
+SELF-GRADE ANSWERS TO USE AFTER HOSTING ONLINE
+
+URL:
+Paste the live GitHub Pages URL for scratch.html.
+Example:
+https://YOURUSERNAME.github.io/YOURREPOSITORY/scratch.html
+
+Hosting:
+If hosted successfully, choose:
+Yes. My site is hosted online and I will be grading based on that online version.
+
+Honesty:
+Yes
+
+Aesthetic problems:
+My site has zero aesthetic problems.
+
+Links:
+EVERY link works correctly without any flaws.
+
+Images and videos:
+All images and videos show correctly.
+
+Résumé:
+My résumé is complete and well organized.
+
+Résumé format:
+HTML
+
+From-scratch page:
+I created it from scratch, from a completely blank HTML file.
+
+From-scratch included elements:
+Select all:
+- At least one image not from the Bootstrap theme
+- An embedded YouTube video
+- A custom background color or background image
+- An on-page anchor
+- An unordered (bulleted) list embedded inside a numbered list (or the reverse)
+
+Custom stylesheet:
+Select all:
+- I successfully linked to my own stylesheet
+- My stylesheet includes at least four styles
+- I have at least one style that specifies a font family
+- I have at least one style that specifies the positioning of divs
+- I have at least one style that specifies a font color
+- I created my own stylesheet
+- I specify and apply at least three divs
+
+Tableau:
+The embedded Tableau graph is fully interactive.
+
+Graduate student:
+I am not a graduate student.
+
+Web app description:
+My web app is an AI-assisted goal planner. A user types a goal, chooses how many days per week they can work on it, enters a session length, and describes an obstacle. The app uses JavaScript to generate a simple weekly action plan, an obstacle strategy, and a weekly progress check.
+
+Web app quality:
+Pretty cool. I iterated with the AI and edited what it came up with to make something nearly awesome.

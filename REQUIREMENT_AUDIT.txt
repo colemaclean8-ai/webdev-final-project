@@ -1,0 +1,56 @@
+REQUIREMENT AUDIT
+
+Professional appearance:
+PASS - Professional pages use Bootstrap CDN and a clean custom stylesheet.
+
+Hosted online:
+READY - Files are structured for GitHub Pages. I cannot host it from here, but the project is ready to upload.
+
+No broken local content:
+PASS - Local images use assets/img/hero.svg, assets/img/resume.svg, and assets/img/fitness.svg.
+PASS - Internal links use valid relative paths.
+PASS - External links use valid public URLs.
+
+HTML résumé:
+PASS - resume.html contains a complete résumé written in HTML, not a PDF/doc/image.
+
+From-scratch page:
+PASS - scratch.html was created from a blank HTML file and does not use Bootstrap.
+
+Nested list:
+PASS - scratch.html includes an ordered list with unordered lists nested inside list items.
+
+Image not from Bootstrap:
+PASS - scratch.html uses assets/img/fitness.svg.
+
+Embedded YouTube video:
+PASS - scratch.html embeds a YouTube video using an iframe.
+
+On-page anchor:
+PASS - scratch.html includes #top, #video, and #tableau anchor navigation.
+
+Custom background:
+PASS - scratch.css gives the page a custom background color.
+
+Custom stylesheet from scratch:
+PASS - scratch.html links to css/scratch.css.
+PASS - scratch.css includes more than four style definitions.
+PASS - scratch.css specifies font color.
+PASS - scratch.css specifies font family.
+PASS - scratch.css styles divs for layout and positioning.
+
+At least three divs:
+PASS - scratch.html includes header, nav-box, content-block, side-note, media-box, and tableau-box divs.
+
+Interactive Tableau graph:
+PASS - scratch.html embeds Tableau Public through an iframe, not an image.
+
+Navigation back to professional pages:
+PASS - scratch.html links to index.html, resume.html, and projects.html.
+
+Web app:
+PASS - app/goal-planner.html is a single-page HTML/CSS/JavaScript app.
+PASS - scratch.html links to the app.
+
+Graduate student extra page:
+NOT REQUIRED - User is undergraduate/not a graduate student.
